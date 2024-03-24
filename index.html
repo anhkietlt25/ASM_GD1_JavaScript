@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Shop bán linh kiện - Điện thoại</title>
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <link rel="stylesheet" href="./assets/css/styles.css" />
+
+        <!-- Font awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- JavaScript -->
+    </head>
+    <body onload="Start();">
+        <!-- Header -->
+        <header class="sticky-nav">
+            <div class="content">
+                <nav class="nav-bar">
+                    <!-- Logo -->
+                    <a href="#"
+                        ><img
+                            style="width: 160px"
+                            src="./assets/images/bitphone-high-resolution-logo-transparent.png"
+                            alt="bitphone"
+                    /></a>
+
+                    <!-- Navigation -->
+                    <ul class="nav-flex">
+                        <li>
+                            <a href="#">Trang chủ</a>
+                        </li>
+                        <li>
+                            <a href="#">Về chúng tôi</a>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                        </li>
+                        <li>
+                            <a href="#">Điện thoại</a>
+                        </li>
+                        <li>
+                            <a href="#">Linh kiện điện thoại</a>
+                        </li>
+                    </ul>
+
+                    <!-- Action -->
+                    <div class="button-header">
+                        <a href="#" class="click-link" onclick="directCart();"
+                            ><i class="fa-solid fa-cart-shopping"></i>
+                            <div class="Number-cart"></div>
+                        </a>
+
+                        <a href="#" class="btn-link action-btn" onclick="directSign();">Sign up</a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Banner -->
+        <div class="container">
+            <div class="content">
+                <div class="banner">
+                    <i
+                        class="fa-solid fa-angle-left next-left"
+                        onclick="Back();"
+                    ></i>
+                    <img
+                        id="mySlide"
+                        src="./assets/slides/galaxy-a35.webp"
+                        alt=""
+                    />
+                    <i
+                        class="fa-solid fa-angle-right next-right"
+                        onclick="Next();"
+                    ></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cart -->
+        <div class="hero-cart">
+            <div class="content">
+                <div class="df-col-3"></div>
+            </div>
+        </div>
+
+        <!-- phone components -->
+
+        <div class="hero-phone-components">
+            <div class="content">
+                <div class="df-col-3">
+                    <div class="col-3">
+                        <img
+                            src="./assets/images/sac-du-phong.webp"
+                            alt="sac-du-phong"
+                        />
+                        <div class="title-hero-col">
+                            <p class="title-info">
+                                Hub Ugreen Type C 6 in 1 CM195
+                            </p>
+                        </div>
+                        <div class="Price-phone">
+                            <span class="new-Price">720000</span>
+                            <span class="old-Price">950000</span>
+                        </div>
+                        <div class="df-icon-button">
+                            <div class="icon-phone">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <button class="btn-add-cart">MUA NGAY</button>
+                            <div class="df-status-icon">
+                                <a
+                                    href=""
+                                    class="icon-add"
+                                    onclick="addCart('${listSP[i].ma}');"
+                                    ><i class="fa-solid fa-plus pos-top"></i
+                                ></a>
+                                <a
+                                    href="#"
+                                    class="icon-like"
+                                    onclick="likeimg();"
+                                    ><i
+                                        class="fa-regular fa-thumbs-up pos-top"
+                                    ></i
+                                ></a>
+                                <a
+                                    href="#"
+                                    class="icon-heart"
+                                    onclick="heartCart();"
+                                    ><i class="fa-solid fa-heart pos-top"></i
+                                ></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Box 2 -->
+                    <div class="col-3">
+                        <img src="./assets/images/cuc-sac.webp" alt="cuc-sac" />
+                        <div class="title-hero-col">
+                            <p class="title-info">
+                                Củ sạc Aukey PD 30W PA-Y30S
+                            </p>
+                        </div>
+                        <div class="Price-phone">
+                            <span class="new-Price">320000</span>
+                            <span class="old-Price">550000</span>
+                        </div>
+                        <div class="df-icon-button">
+                            <div class="icon-phone">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <button class="btn-add-cart">MUA NGAY</button>
+                            <div class="df-status-icon">
+                                <a
+                                    href=""
+                                    class="icon-add"
+                                    onclick="addCart('${listSP[i].ma}');"
+                                    ><i class="fa-solid fa-plus pos-top"></i
+                                ></a>
+                                <a
+                                    href="#"
+                                    class="icon-like"
+                                    onclick="likeimg();"
+                                    ><i
+                                        class="fa-regular fa-thumbs-up pos-top"
+                                    ></i
+                                ></a>
+                                <a
+                                    href="#"
+                                    class="icon-heart"
+                                    onclick="heartCart();"
+                                    ><i class="fa-solid fa-heart pos-top"></i
+                                ></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Box 3 -->
+                    <div class="col-3">
+                        <img
+                            src="./assets/images/cuong_luc_samsung_galaxy.webp"
+                            alt="cuong_luc_samsung_galaxy"
+                        />
+                        <div class="title-hero-col">
+                            <p class="title-info">
+                                Kính cường lực Samsung Galaxy
+                            </p>
+                        </div>
+                        <div class="Price-phone">
+                            <span class="new-Price">390000</span>
+                            <span class="old-Price">1500000</span>
+                        </div>
+                        <div class="df-icon-button">
+                            <div class="icon-phone">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <button class="btn-add-cart">MUA NGAY</button>
+                            <div class="df-status-icon">
+                                <a
+                                    href=""
+                                    class="icon-add"
+                                    onclick="addCart('${listSP[i].ma}');"
+                                    ><i class="fa-solid fa-plus pos-top"></i
+                                ></a>
+                                <a
+                                    href="#"
+                                    class="icon-like"
+                                    onclick="likeimg();"
+                                    ><i
+                                        class="fa-regular fa-thumbs-up pos-top"
+                                    ></i
+                                ></a>
+                                <a
+                                    href="#"
+                                    class="icon-heart"
+                                    onclick="heartCart();"
+                                    ><i class="fa-solid fa-heart pos-top"></i
+                                ></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Box 4 -->
+                    <div class="col-3">
+                        <img
+                            src="./assets/images/ban-phim-co-e-dra-khong-day-ek398l-alpha-red.webp"
+                            alt="ban-phim-co-e-dra-khong-day-ek398l-alpha-red"
+                        />
+                        <div class="title-hero-col">
+                            <p class="title-info">
+                                Bàn phím cơ E-DRA không dây
+                            </p>
+                        </div>
+                        <div class="Price-phone">
+                            <span class="new-Price">649000</span>
+                            <span class="old-Price">729000</span>
+                        </div>
+                        <div class="df-icon-button">
+                            <div class="icon-phone">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <button class="btn-add-cart">MUA NGAY</button>
+                            <div class="df-status-icon">
+                                <a
+                                    href=""
+                                    class="icon-add"
+                                    onclick="addCart('${listSP[i].ma}');"
+                                    ><i class="fa-solid fa-plus pos-top"></i
+                                ></a>
+                                <a
+                                    href="#"
+                                    class="icon-like"
+                                    onclick="likeimg();"
+                                    ><i
+                                        class="fa-regular fa-thumbs-up pos-top"
+                                    ></i
+                                ></a>
+                                <a
+                                    href="#"
+                                    class="icon-heart"
+                                    onclick="heartCart();"
+                                    ><i class="fa-solid fa-heart pos-top"></i
+                                ></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+
+        <div class="hero-footer">
+            <footer class="footer">
+                <div class="content">
+                    <div class="row row-topft">
+                        <div class="column-ft">
+                            <!-- Prouct column -->
+                            <h3 class="heading-ft">Product</h3>
+                            <ul class="list-ft">
+                                <li class="item">
+                                    <a href="#!">Listing</a>
+                                </li>
+                                <li class="item">
+                                    <a href="#!">Property</a>
+                                </li>
+                                <li class="item">
+                                    <a href="#!">Agents</a>
+                                </li>
+                                <li class="item">
+                                    <a href="#!">Blog</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="column-ft">
+                            <!-- Resources column -->
+                            <h3 class="heading-ft">Resources</h3>
+                            <ul class="list-ft">
+                                <li class="item">
+                                    <a href="#!">Member Stories</a>
+                                </li>
+                                <li class="item">
+                                    <a href="#!">Video</a>
+                                </li>
+                                <li class="item">
+                                    <a href="#!">Free trial</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="column-ft">
+                            <!-- Company column -->
+                            <h3 class="heading-ft">Company</h3>
+                            <ul class="list-ft">
+                                <li class="item">
+                                    <a href="#!">Patnerships</a>
+                                </li>
+                                <li class="item">
+                                    <a href="#!">Terms of use</a>
+                                </li>
+                                <li class="item">
+                                    <a href="#!">Privacy</a>
+                                </li>
+                                <li class="item">
+                                    <a href="#!">Sitemap</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="column-ft">
+                            <!-- Get in touch column -->
+                            <h3 class="heading-ft">Get in touch</h3>
+                            <p class="desc">
+                                You will find your perfect phone on our website
+                            </p>
+                            <!-- social -->
+                            <div class="social">
+                                <a href="#!" class="social-link">
+                                    <img
+                                        src="./assets/images/social icon.svg"
+                                        alt="social icon"
+                                    />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row row-bottomft">
+                        <a href="#"
+                            ><img
+                                style="width: 100px; object-fit: cover;"
+                                src="./assets/images/bitphone-high-resolution-logo-transparent.png"
+                                alt="bitphone-high-resolution-logo-transparent."
+                                class="logo"
+                        /></a>
+                        <p class="copy-right">
+                            Copyright 2024.com, All rights reserved.
+                        </p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
+<script src="./assets/js/slidesshow.js"></script>
+<script src="./assets/js/cart.js"></script>

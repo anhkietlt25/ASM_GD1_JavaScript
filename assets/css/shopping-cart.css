@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --Mau-nen-chu-dao-trang: #374151;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Viet chung */
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.content {
+    width: 1110px;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-link {
+    display: inline-block;
+    min-width: 9.8rem;
+    padding: 1.8rem 1.6rem;
+    border-radius: 1.2rem;
+    background: var(--Mau-nen-chu-dao-trang);
+    color: #fff;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+/* Header */
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    padding: 1.2rem 0;
+}
+
+.nav-bar .nav-flex {
+    display: flex;
+    margin-left: 50px;
+}
+
+.nav-bar .button-header {
+    margin-left: auto;
+}
+
+.nav-bar .nav-flex > li > a {
+    color: #4f5361;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 14px;
+}
+
+.nav-bar .click-link {
+    color: var(--Mau-nen-chu-dao-trang);
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+}
+
+.click-link .Number-cart {
+    width: 24px;
+    height: 100%;
+    padding: 5px 6px;
+    border: 2px solid red;
+    border-radius: 5px;
+    background-color: red;
+    color: #fff;
+    font-size: 55%;
+    position: absolute;
+    top: -15px;
+    left: 14px;
+}
+
+.nav-bar .action-btn {
+    padding: 13px 16px;
+    margin-left: 18px;
+    border-radius: 8px;
+}
+
+.nav-bar .button-header > .btn-link.action-btn:hover {
+    border: 1px solid #333;
+    background: #fff;
+    color: #000000ff;
+    font-weight: 700;
+    transition: all 0.3s linear;
+}
+
+/* Table */
+.container-cart {
+    margin-top: 20px;
+}
+
+#Tab-cart {
+    border-collapse: collapse;
+    border-color: var(--Mau-nen-chu-dao-trang);
+    border: 1;
+    width: 100%;
+}
+
+.Delete-Cart:hover {
+    cursor: pointer;
+}

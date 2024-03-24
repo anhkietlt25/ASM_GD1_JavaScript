@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>FORM VALIDATION</title>
+        <!-- <link rel="stylesheet" href="./assets/css/reset.css" /> -->
+        <link rel="stylesheet" href="./assets/css/form.css" />
+
+        <!-- Font awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    </head>
+    <body>
+        <div class="container">
+            <img
+                style="width: 200px; height: 200px; object-fit: cover"
+                src="./assets/images/bitphone-high-resolution-logo-transparent.png"
+                alt=""
+            />
+            <form action="" id="mainForm" novalidate>
+                <h2>Sign Up BitPhone</h2>
+                <div class="form-control">
+                    <label for="name">Name</label>
+                    <input
+                        type="text"
+                        placeholder="Nhập tên"
+                        id="name"
+                        autocomplete="off"
+                    />
+                    <i class="icon"></i>
+                </div>
+
+                <div class="form-control">
+                    <label for="email">Email</label>
+                    <input
+                        type="email"
+                        placeholder="Nhập email"
+                        id="email"
+                        autocomplete="off"
+                    />
+                    <i class="icon"></i>
+                </div>
+
+                <div class="form-control">
+                    <label for="phone">Phone</label>
+                    <input
+                        type="tel"
+                        placeholder="Nhập SDT"
+                        id="phone"
+                        autocomplete="off"
+                    />
+                    <i class="icon"></i>
+                </div>
+
+                <div class="form-control">
+                    <label for="password">Password</label>
+                    <input
+                        type="password"
+                        placeholder="Nhập pass"
+                        id="password"
+                        autocomplete="off"
+                    />
+                    <i class="icon"></i>
+                </div>
+
+                <div class="form-control">
+                    <label for="message">Message</label>
+                    <textarea
+                        placeholder="Nhập ghi chú"
+                        id="message"
+                    ></textarea>
+                    <i class="icon"></i>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <div id="successFully" class="modal">
+            <div class="modal-content">
+                <span class="close-btn"><i class="fa-solid fa-xmark"></i></span>
+                <h2>Success!</h2>
+                <p>Bạn đã đăng nhập thành công trang Bitphone!</p>
+            </div>
+        </div>
+
+        <script src="./assets/js/formvalidation.js"></script>
+    </body>
+</html>
