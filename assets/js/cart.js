@@ -82,11 +82,11 @@ for (let i = 0; i < listSP.length; i++) {
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                </div>
-               <button class="btn-add-cart">
+               <button class="btn-add-cart" onclick="addCart('${listSP[i].ma}');">
                    MUA NGAY
                </button>
                <div class="df-status-icon">
-                   <a href="#" class="icon-add" onclick="addCart('${listSP[i].ma}');"><i class="fa-solid fa-plus pos-top"></i></a>
+                   <a href="#" class="icon-add" onclick="directDetail();" ><i class="fa-solid fa-magnifying-glass"></i></a>
                    <a href="#" class="icon-like" onclick="likeimg();"><i class="fa-regular fa-thumbs-up pos-top"></i></a>
                    <a href="#" class="icon-heart" onclick="heartCart();"><i class="fa-solid fa-heart pos-top"></i></a>
                </div>
@@ -166,4 +166,8 @@ function heartCart() {
           break;
         }
     }
+}
+
+function directDetail() {
+    location.href = "detail.html";
 }
